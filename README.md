@@ -13,6 +13,7 @@ Requirements:
 - All customization allowed in the UI should result in a consistent looking character output (e.g. no major mesh breakages).
 - If the inspiration strikes you, feel free to explore other customizations that are in the model.
 - Expect to talk about your solution in detail in any followup interview.
+- Email faye@unplay.com a link to your PR and any contact info you want to provide if you are interested in applying!
 
 Emphasis on how you choose to structure your Canvas UI, supporting code, and your ability to make sense of the provided model and manipulate data in it.
 
