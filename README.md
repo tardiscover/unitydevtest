@@ -3,6 +3,8 @@ Create a functional UI for the morphing v008 LiveTale Character model!
 
 Inside this project, you will find a 3d model. This is an older novel custom 3d model consisting of many mesh renderers, bones, and blendshapes. We have since changed many things about our internal model, and decided to repurpose this for interview purposes. The blendshapes include many options, but most notable blending for fantasy species and body shapes. This project utilizes the LTS version of Unity 2021, however it should seemlessly load in all versions of Unity 2022 as well.
 
+Note that in exploring this 3d model, you will discover dozens of SkinnedMeshRenderers, each with a multitude of blendshape definitions. The naming of the blendshapes indicates some blendshapes that benefit from being modified in unison in order to avoid mesh seam breakages. Exploring this model and making sense of it is part of this task.
+
 The model itself is property of Unplay, Inc. and cannot be used for other purposes without explicit permission from Unplay, Inc.
 
 Requirements:
