@@ -179,6 +179,8 @@ MonoBehaviour:
     blendShape: bs_torso.torso_body_muscular_heavy
   - skinnedMeshRenderer: {fileID: 8381323880722849142}
     blendShape: bs_arm_upper_L.arm_upper_L_body_muscular_heavy
+  - skinnedMeshRenderer: {fileID: 5173794096099162012}
+    blendShape: bs_arm_lower_L.arm_lower_L_body_muscular_heavy
 --- !u!1 &689336652
 GameObject:
   m_ObjectHideFlags: 0
