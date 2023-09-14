@@ -24,7 +24,7 @@ public class AttributeSliderController : MonoBehaviour
         {
             //Debug.Log($"OnSliderValueChanged - blendShapeCount = {blendShapeSource.skinnedMeshRenderer.sharedMesh.blendShapeCount}"); //!!!
 
-            blendShapeIndex = blendShapeSource.skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(blendShapeSource.blendShape);  //!!!
+            blendShapeIndex = blendShapeSource.skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(blendShapeSource.blendShapeName);  //!!!
 
             if (blendShapeIndex >= 0)
             {
@@ -32,7 +32,7 @@ public class AttributeSliderController : MonoBehaviour
             }
             else
             {
-                Debug.Log($"OnSliderValueChanged - No blendShapeIndex for {blendShapeSource.skinnedMeshRenderer.name}, {blendShapeSource.blendShape}"); //!!!
+                Debug.Log($"OnSliderValueChanged - No blendShapeIndex for {blendShapeSource.skinnedMeshRenderer.name}, {blendShapeSource.blendShapeName}"); //!!!
             }
         }
     }

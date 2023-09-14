@@ -176,11 +176,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendShapeSources:
   - skinnedMeshRenderer: {fileID: 4810547450318449142}
-    blendShape: bs_torso.torso_body_muscular_heavy
+    blendShapeName: 
   - skinnedMeshRenderer: {fileID: 8381323880722849142}
-    blendShape: bs_arm_upper_L.arm_upper_L_body_muscular_heavy
+    blendShapeName: 
   - skinnedMeshRenderer: {fileID: 5173794096099162012}
-    blendShape: bs_arm_lower_L.arm_lower_L_body_muscular_heavy
+    blendShapeName: 
 --- !u!1 &689336652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450652254282656}
   - component: {fileID: 5866666020603689434}
+  - component: {fileID: 5866666020603689435}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -8046,6 +8047,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5866666020603689435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148317976858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d65f350b00fd8841bd4a3a5397fffed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5904001798189540712
 GameObject:
   m_ObjectHideFlags: 0
