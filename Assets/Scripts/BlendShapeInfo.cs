@@ -7,11 +7,12 @@ using UnityEngine;
 /// </summary>
 public class BlendShapeInfo
 {
-    public SkinnedMeshRenderer skinnedMeshRenderer;
-    public string blendShapeName;
-    public int blendShapeIndex;
-    public string attribute;
-    public string bodyPart;
+    public SkinnedMeshRenderer skinnedMeshRenderer; //A SkinnedMeshRenderer on a child GameObject of the Character
+    public string blendShapeName;   //A blend shape name within that SkinnedMeshRenderer
+    public int blendShapeIndex;     //The blend shape index within that SkinnedMeshRenderer
+    public string attribute;        //The "attribute" of the blend shape, based on the suffix of the name ignoring the body part.  Several body parts may have the same attribute, such as "body_muscular_heavy".
+    public string bodyPart;         //The body part (parent object) of the blend shape.  A body part may have several blend shapes, each with a different attribute.
+    public bool isComplete;         //A flag for convenience to represent that a BlendShapeInfo has all of its parts (particularly an attribute).  Stored for convenience and code clarity..
 
     /// <summary>
     /// Used to store data about a BlendShape, including its skinnedMeshRenderer, name, index, attribute, and bodyPart.
@@ -39,6 +40,7 @@ public class BlendShapeInfo
             blendShapeName = skinnedMeshRenderer.sharedMesh.GetBlendShapeName(blendShapeIndex);
             bodyPart = skinnedMeshRenderer.gameObject.name;
             attribute = CalcAttribute();
+            isComplete = !string.IsNullOrEmpty(attribute);
         }
     }
 
