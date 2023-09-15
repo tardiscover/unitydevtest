@@ -221,16 +221,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: sliderTitle
-      value: Gender Feminine
+      value: Gender Masculine/Feminine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: defaultValue
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
       value: gender_fem
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Fem
@@ -443,10 +443,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: body_weight_thin
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Body Weight Thin
@@ -565,10 +561,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: species_elf_masc
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Elf Masc
@@ -882,10 +874,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: body_weight_heavy
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Body Weight Heavy
@@ -1004,10 +992,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: species_orc_masc
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Orc Masc
@@ -1295,10 +1279,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: species_orc_fem
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Orc Fem
@@ -1417,10 +1397,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: species_elf_fem
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Elf Fem
@@ -2980,7 +2956,7 @@ GameObject:
   - component: {fileID: 5866666020603689435}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: DefaultCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10057,10 +10033,6 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: body_muscular_heavy
       objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: characterInfoController
-      value: 
-      objectReference: {fileID: 5866666020603689435}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Heavy Musc

@@ -50,7 +50,7 @@ public class BlendShapeInfo
     /// <returns></returns>
     private string CalcAttribute()
     {
-        string returnValue = "";    //Until/unless calculated otherwise
+        string result = "";    //Until/unless calculated otherwise
 
         string parentName = skinnedMeshRenderer.gameObject.name;
         //Debug.Log($"parentName = '{parentName}', expectedPrefix = '{expectedPrefix}'"); //!!!
@@ -77,10 +77,10 @@ public class BlendShapeInfo
             }
             else
             {
-                returnValue = blendShapeName.Substring(periodPosition + parentName.Length + 2);       //String after the period and the parentName and the "_".
+                result = blendShapeName.Substring(periodPosition + parentName.Length + 2);       //String after the period and the parentName and the "_".
             }
         }
 
-        return returnValue;
+        return result;
     }
 }

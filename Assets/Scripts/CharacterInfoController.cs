@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text;
 
 /// <summary>
 /// A controller for obtaining and handling BlendShapeInfo from the Character objects and models.
 /// </summary>
 public class CharacterInfoController : MonoBehaviour
 {
-    //A dictionary (based on attribute) of lists of BlendShapeInfo's sharing that attribute
+    //A sorted dictionary (based on attribute) of lists of BlendShapeInfo's sharing that attribute
     //Populated here, but accessed elsewhere for a specified attribute through GetBlendshapesForAttribute() below.
-    private Dictionary<string, List<BlendShapeInfo>> attributeDictionary = new();      //Stores lists of BlendShapeInfo by Attribute
+    private SortedDictionary<string, List<BlendShapeInfo>> attributeDictionary = new();      //Stores lists of BlendShapeInfo by Attribute
 
 
     void Awake()
@@ -44,6 +45,8 @@ public class CharacterInfoController : MonoBehaviour
                 }
             }
         }
+
+        //Debug.Log(GetStringListOfAttributes());     //!!! Can be used to see all attributes when debugging.
     }
 
     /// <summary>
@@ -74,5 +77,22 @@ public class CharacterInfoController : MonoBehaviour
         {
             return new List<BlendShapeInfo>();  //return empty list
         }
+    }
+
+    /// <summary>
+    /// A debugging function for returning a single string of all attributes (keys) in the attributeDictionary, each on a different line.
+    /// (Suitable for Debud.Log, etc.  Will have to select the item to see all values at the bottom of the console.)
+    /// </summary>
+    /// <returns>string</returns>
+    public string GetStringListOfAttributes()
+    {
+        StringBuilder result = new();
+
+        foreach (string key in attributeDictionary.Keys)
+        {
+            result.AppendLine(key);
+        }
+
+        return result.ToString();
     }
 }

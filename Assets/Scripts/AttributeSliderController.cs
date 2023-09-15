@@ -4,13 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Used for each AttributeSlider.  Set public properties in the inspector to determine title and attribute controlled.
+/// (Attributes are collections of blend shapes that share a suffix.  They are initialized by CharacterInfoController.cs.)
+/// </summary>
 public class AttributeSliderController : MonoBehaviour
 {
     public string sliderTitle;
     public string blendShapeInfoAttribute;
+
+    [Range(0.0f, 100.0f)]
+    public float defaultValue;
+
     private List<BlendShapeInfo> blendShapeInfoListForAttribute;
 
-    public CharacterInfoController characterInfoController;
+    private CharacterInfoController characterInfoController;    //This could be public if you ever have another character you want to use
 
     private TextMeshProUGUI textAttributeTitle;
 
@@ -20,13 +28,35 @@ public class AttributeSliderController : MonoBehaviour
 
     private void Awake()
     {
-        sliderComponent = GetComponentInChildren<Slider>();
+        InitializeCharacterInfoController();
+        InitializeSlider();
+        InitializeText();
     }
 
     private void Start()
     {
-        InitializeText();
         LinkToAttribute();
+    }
+
+    /// <summary>
+    /// If characterInfoController isn't already specified, set it to the default (found by key).
+    /// </summary>
+    private void InitializeCharacterInfoController()
+    {
+        if (characterInfoController == null)
+        {
+            GameObject character = GameObject.FindGameObjectWithTag("DefaultCharacter");
+            if (character != null)
+            {
+                characterInfoController = character.GetComponent<CharacterInfoController>();
+            }
+        }
+    }
+
+    private void InitializeSlider()
+    {
+        sliderComponent = GetComponentInChildren<Slider>();
+        sliderComponent.SetValueWithoutNotify(defaultValue);    //Don't just set sliderComponent.value or you'll trigger OnSliderValueChanged() too soon.
     }
 
     private void InitializeText()
