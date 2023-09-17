@@ -24,7 +24,13 @@ public class AttributeSliderController : MonoBehaviour
 
     private TextMeshProUGUI textAttributeTitle;
 
+    //The Attribute Slider Bindings visible in and assignable from the Inspector
+    //(until populated from some other datasource in future, like JSON, DB, or webservice).
     public AttributeSliderBinding[] attributeSliderBindings;
+
+    //The same as the above, but stored in a sorted dictionary by attribute for quick and easy reference.
+    private SortedDictionary<string, AttributeSliderBinding> attributeSliderBindingSortedDictionary = new();
+
 
     private Slider sliderComponent;
 
@@ -85,6 +91,7 @@ public class AttributeSliderController : MonoBehaviour
 
     /// <summary>
     /// Populate blendShapeInfoListForAttributes with all of the blend shape bings bindings for ALL attributes bound to this slider.
+    /// Also populates attributeSliderBindingSortedDictionary so we can efficiently access the other properties of a binding besides the attribute name;
     /// </summary>
     private void BindAttributesToList()  //!!!
     {
@@ -92,6 +99,8 @@ public class AttributeSliderController : MonoBehaviour
         foreach (AttributeSliderBinding attributeSliderBinding in attributeSliderBindings)
         {
             AppendAttributeBindingToList(attributeSliderBinding.attribute);
+            Debug.Log($"BindAttributesToList {attributeSliderBinding.attribute}");  //!!!!!!!!
+            attributeSliderBindingSortedDictionary.Add(attributeSliderBinding.attribute, attributeSliderBinding);
         }
     }
 
@@ -100,10 +109,21 @@ public class AttributeSliderController : MonoBehaviour
     /// </summary>
     public void OnSliderValueChanged()
     {
+        AttributeSliderBinding currentattributeSliderBinding;
+        float reverseEffectadjustment = sliderComponent.maxValue - sliderComponent.minValue;  //precalc in case you want the opposite effect from the slider
+
         //Adjust all blend shapes with the attribute
         foreach (BlendShapeInfo blendShapeInfo in blendShapeInfoListForAttributes)
         {
-            blendShapeInfo.skinnedMeshRenderer.SetBlendShapeWeight(blendShapeInfo.blendShapeIndex, sliderComponent.value);
+            currentattributeSliderBinding = attributeSliderBindingSortedDictionary[blendShapeInfo.attribute];
+            if (currentattributeSliderBinding.reverseSliderEffect)
+            {
+                blendShapeInfo.skinnedMeshRenderer.SetBlendShapeWeight(blendShapeInfo.blendShapeIndex, (reverseEffectadjustment - sliderComponent.value));
+            }
+            else
+            {
+                blendShapeInfo.skinnedMeshRenderer.SetBlendShapeWeight(blendShapeInfo.blendShapeIndex, sliderComponent.value);
+            }
         }
     }
 }
