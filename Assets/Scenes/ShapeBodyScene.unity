@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_AnchorMax.x
@@ -220,6 +220,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: species_elf_fem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: species_elf_fem
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -333,6 +341,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_nose_angle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_nose_angle
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -453,6 +469,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: iso_trunk
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_trunk
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Trunk
@@ -569,6 +593,14 @@ PrefabInstance:
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeSources.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_pectorals
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
@@ -687,6 +719,22 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: gender_fem
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: gender_fem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[1].attribute
+      value: iso_bulge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[1].valueIsInverted
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Fem
@@ -694,123 +742,6 @@ PrefabInstance:
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986284366486449, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986284944928516, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
---- !u!1001 &184648178
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 495724343}
-    m_Modifications:
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: sliderTitle
-      value: Bulge
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: blendShapeInfoAttribute
-      value: iso_bulge
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: blendShapeSources.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
-      propertyPath: m_Name
-      value: Slider - Bulge
       objectReference: {fileID: 0}
     - target: {fileID: 7282986284366486449, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_AnchorMax.y
@@ -919,6 +850,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_nose_bulb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_nose_bulb
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -1032,6 +971,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_belly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: iso_belly
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -1233,6 +1180,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_thighs
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Thighs
@@ -1344,6 +1299,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_butt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: iso_butt
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -1463,6 +1426,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_forearms
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Forearms
@@ -1574,6 +1545,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: body_weight_thin_head
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: body_weight_thin_head
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -1698,6 +1677,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_trapezius
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Trapezius
@@ -1811,6 +1798,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_chin_tip_width
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_chin_tip_width
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Chin Tip Width
@@ -1909,7 +1904,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 630590681}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19673723
+  m_Size: 0.20004138
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2051,6 +2046,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_lip_top_fullness
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_lip_top_fullness
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Top Lip Fullness
@@ -2162,6 +2165,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_bellyHeight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: iso_bellyHeight
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -2495,6 +2506,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: iso_neck
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_neck
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Neck
@@ -2606,6 +2625,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_mouth_width
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_mouth_width
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[1].attribute
       value: facial_mouth_width
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -2818,6 +2849,14 @@ PrefabInstance:
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeSources.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: body_muscular_mid
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
@@ -3065,6 +3104,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_ear_scale
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_ear_scale
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Ear Scale
@@ -3305,6 +3352,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_brow_forward
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_brow_forward
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Brow Forward
@@ -3417,6 +3472,14 @@ PrefabInstance:
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
       value: facial_ears_out
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: Ears Out
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
@@ -3531,6 +3594,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_nose_bridge_depth
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_nose_bridge_depth
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Nose Bridge Depth
@@ -3642,6 +3713,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_lip_bot_fullness
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_lip_bot_fullness
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -3818,7 +3897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3898,6 +3977,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: species_orc_masc
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: species_orc_masc
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -4097,6 +4184,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_ear_lobe
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_ear_lobe
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Ear Lobe
@@ -4214,6 +4309,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_calves
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Calves
@@ -4325,6 +4428,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_nose_length
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_nose_length
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -4440,6 +4551,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_lip_bot_thin
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_lip_bot_thin
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Bottom Lip Thinness
@@ -4551,6 +4670,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_cheeks_gaunt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_cheeks_gaunt
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -4666,6 +4793,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_nose_tip_width_out
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_nose_tip_width_out
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Nose Tip Width Out
@@ -4779,6 +4914,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_chin_tip_length
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_chin_tip_length
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Chin Tip Length
@@ -4890,6 +5033,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_brow_wide
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_brow_wide
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -5042,6 +5193,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: blend_facial_cheekbones_out
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: blend_facial_cheekbones_out
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Cheekbones Out
@@ -5153,6 +5312,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_back
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: iso_back
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -5272,6 +5439,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_triceps
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Triceps
@@ -5385,6 +5560,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: blend_facial_cheekbones_in
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: blend_facial_cheekbones_in
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Cheekbones In
@@ -5416,7 +5599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5496,6 +5679,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: species_elf_masc
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: species_elf_masc
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -5609,6 +5800,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_ribcage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_ribcage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[1].attribute
       value: iso_ribcage
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -5761,6 +5964,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: body_weight_thin
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: body_weight_thin
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Body Weight Thin
@@ -5874,6 +6085,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_nose_tip_width_in
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_nose_tip_width_in
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Nose Tip Width In
@@ -5985,6 +6204,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: body_weight_heavy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: body_weight_heavy
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -6368,6 +6595,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_nose_bridge_width
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_nose_bridge_width
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Nose Bridge Width
@@ -6561,6 +6796,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_deltoids
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Deltoids
@@ -6674,6 +6917,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_mouth_out
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_mouth_out
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Mouth Out
@@ -6705,7 +6956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6778,6 +7029,26 @@ PrefabInstance:
     - target: {fileID: 7282986283560805654, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: sliderTitle
+      value: Orc Fem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: blendShapeInfoAttribute
+      value: species_orc_masc
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: species_orc_masc
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[1].attribute
+      value: species_orc_masc
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
@@ -6960,6 +7231,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_jaw_down
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_jaw_down
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Jaw Down
@@ -7071,6 +7350,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_lip_top_thin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_lip_top_thin
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -7383,6 +7670,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: facial_mouth_crease
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: facial_mouth_crease
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Mouth Crease
@@ -7494,6 +7789,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_jaw_wide
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_jaw_wide
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -7613,6 +7916,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: body_muscular_heavy
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Heavy Musc
@@ -7726,6 +8037,14 @@ PrefabInstance:
       propertyPath: blendShapeInfoAttribute
       value: iso_bust_large
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_bust_large
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Bust Large
@@ -7837,6 +8156,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: iso_bust_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: iso_bust_small
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
@@ -7956,6 +8283,14 @@ PrefabInstance:
       propertyPath: blendShapeSources.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
+      value: iso_biceps
+      objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: m_Name
       value: Slider - Biceps
@@ -8067,6 +8402,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
       propertyPath: blendShapeInfoAttribute
+      value: facial_cheeks_full
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282986283560805655, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}
+      propertyPath: attributeSliderBindings.Array.data[0].attribute
       value: facial_cheeks_full
       objectReference: {fileID: 0}
     - target: {fileID: 7282986283560805657, guid: a7ff81eb0d91aea41b8f32af6c4a3519, type: 3}

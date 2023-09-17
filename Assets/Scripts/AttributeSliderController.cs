@@ -16,26 +16,27 @@ public class AttributeSliderController : MonoBehaviour
     [Range(0.0f, 100.0f)]
     public float defaultValue;
 
-    private List<BlendShapeInfo> blendShapeInfoListForAttribute;
+    private List<BlendShapeInfo> blendShapeInfoListForAttributes;    //This is a list of blendShapeInfo for all attributes bound to THIS AttributeSlider based on the info in THIS slider's attributeSliderBindings property
 
     private CharacterInfoController characterInfoController;    //This could be public if you ever have another character you want to use
 
     private TextMeshProUGUI textAttributeTitle;
 
-    public BlendShapeSource[] blendShapeSources;
+    public AttributeSliderBinding[] attributeSliderBindings;
 
     private Slider sliderComponent;
 
     private void Awake()
     {
         InitializeCharacterInfoController();
-        InitializeSlider();
-        InitializeText();
     }
 
     private void Start()
     {
-        LinkToAttribute();
+
+        BindAttributesToList(ref blendShapeInfoListForAttributes);
+        InitializeSlider();
+        InitializeText();
     }
 
     /// <summary>
@@ -67,36 +68,32 @@ public class AttributeSliderController : MonoBehaviour
             textAttributeTitle.text = sliderTitle;
         }
     }
-    private void LinkToAttribute()
+
+    private void AppendAttributeBindingToList(ref List<BlendShapeInfo> blendShapeInfoList, string attributeToBind)
     {
-        blendShapeInfoListForAttribute = characterInfoController.GetBlendShapesForAttribute(blendShapeInfoAttribute);
+        Debug.Log($"************{name} {attributeToBind}, {characterInfoController.GetBlendShapesForAttribute(attributeToBind).Count}");  //!!!!!!!!!!
+        blendShapeInfoList.AddRange(characterInfoController.GetBlendShapesForAttribute(attributeToBind));
+        //Debug.Log($"{name} {attributeToBind}, blendShapeInfoList.Count = {blendShapeInfoList.Count}"); //!!!!!!!!!!!!
+    }
+
+    private void BindAttributesToList(ref List<BlendShapeInfo> blendShapeInfoList)  //!!!
+    {
+        //Debug.Log($"BindAttributesToList {name}, blendShapeInfoList.Count = {blendShapeInfoList.Count}, attributeSliderBindings.Length = {attributeSliderBindings.Length}"); //!!!!!!!!!!!!
+        blendShapeInfoList = new();
+        foreach (AttributeSliderBinding attributeSliderBinding in attributeSliderBindings)
+        {
+            AppendAttributeBindingToList(ref blendShapeInfoList, attributeSliderBinding.attribute);
+        }
+        Debug.Log($"***BindAttributesToList {name}, blendShapeInfoList.Count = {blendShapeInfoList.Count}, attributeSliderBindings.Length = {attributeSliderBindings.Length}"); //!!!!!!!!!!!!
     }
 
     public void OnSliderValueChanged()
     {
+        Debug.Log($"OnSliderValueChanged blendShapeInfoListForAttributes {blendShapeInfoListForAttributes.Count}");    //!!!!!!!!!!!!!!!
         //Adjust all blend shapes with the attribute
-        foreach (BlendShapeInfo blendShapeInfo in blendShapeInfoListForAttribute)
+        foreach (BlendShapeInfo blendShapeInfo in blendShapeInfoListForAttributes)
         {
             blendShapeInfo.skinnedMeshRenderer.SetBlendShapeWeight(blendShapeInfo.blendShapeIndex, sliderComponent.value);
-        }
-
-        //ALSO adjust any specific blend shapes added in the inspector that might not include the attribute
-        int blendShapeIndex;
-        foreach (BlendShapeSource blendShapeSource in blendShapeSources)
-        {
-            if (!string.IsNullOrEmpty(blendShapeSource.blendShapeName))
-            {
-                blendShapeIndex = blendShapeSource.skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(blendShapeSource.blendShapeName);  //!!!
-
-                if (blendShapeIndex >= 0)
-                {
-                    blendShapeSource.skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, sliderComponent.value);
-                }
-                else
-                {
-                    Debug.Log($"OnSliderValueChanged - No blendShapeIndex for {blendShapeSource.skinnedMeshRenderer.name}, {blendShapeSource.blendShapeName}"); //!!!
-                }
-            }
         }
     }
 }
