@@ -24,14 +24,18 @@ public class CategoryPanelController : MonoBehaviour
         if (isExpanded)
         {
             //collapse
-            toggleExpandText.text = "+";
+            //!!!toggleExpandText.text = "+";
+            //!!!toggleExpandText.text = "\U0000f107";  //angle-down in font awesome
+            toggleExpandText.text = "\U0000002b";       //plus in font awesome
             categoryContent.SetActive(false);
             isExpanded = false;
         }
         else
         {
             //expand
-            toggleExpandText.text = "-";
+            //!!!toggleExpandText.text = "-";
+            //!!!toggleExpandText.text = "\U0000f106";  //angle-up in font awesome
+            toggleExpandText.text = "\U0000f068";       //minus in font awesome
             categoryContent.SetActive(true);
             isExpanded = true;
         }
