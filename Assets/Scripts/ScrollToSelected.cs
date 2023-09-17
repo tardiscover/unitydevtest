@@ -39,7 +39,7 @@ public class ScrollToSelected : MonoBehaviour
             if (selected != previouslySelected)
             {
                 previouslySelected = selected;
-                Debug.Log(selected.transform.parent.gameObject.name);  //!!!!!!!!!!!!!
+                //Debug.Log(selected.transform.parent.gameObject.name);  //!!!!!!!!!!!!!
             }
             UpdateScrollToSelected(selected.transform.parent.gameObject);    //!!!
         }
