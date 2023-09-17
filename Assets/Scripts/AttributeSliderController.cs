@@ -11,14 +11,16 @@ using TMPro;
 public class AttributeSliderController : MonoBehaviour
 {
     public string sliderTitle;
-    public string blendShapeInfoAttribute;
 
+    //The default value of the slider if you don't want to start at 0.  (Such as for Slider - Fem)
     [Range(0.0f, 100.0f)]
     public float defaultValue;
 
-    private List<BlendShapeInfo> blendShapeInfoListForAttributes;    //This is a list of blendShapeInfo for all attributes bound to THIS AttributeSlider based on the info in THIS slider's attributeSliderBindings property
+    //This is a list of blendShapeInfo for all attributes bound to THIS AttributeSlider based on the info in THIS slider's attributeSliderBindings property
+    private List<BlendShapeInfo> blendShapeInfoListForAttributes;
 
-    private CharacterInfoController characterInfoController;    //This could be public if you ever have another character you want to use
+    //This could be public if you ever have another character you want to use
+    private CharacterInfoController characterInfoController;
 
     private TextMeshProUGUI textAttributeTitle;
 
@@ -33,8 +35,7 @@ public class AttributeSliderController : MonoBehaviour
 
     private void Start()
     {
-
-        BindAttributesToList(ref blendShapeInfoListForAttributes);
+        BindAttributesToList();
         InitializeSlider();
         InitializeText();
     }
@@ -54,10 +55,14 @@ public class AttributeSliderController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Initialize the slider
+    /// </summary>
     private void InitializeSlider()
     {
         sliderComponent = GetComponentInChildren<Slider>();
-        sliderComponent.SetValueWithoutNotify(defaultValue);    //Don't just set sliderComponent.value or you'll trigger OnSliderValueChanged() too soon.
+        //!!!sliderComponent.SetValueWithoutNotify(defaultValue);    //Don't just set sliderComponent.value or you'll trigger OnSliderValueChanged() too soon.
+        sliderComponent.value = defaultValue;
     }
 
     private void InitializeText()
@@ -69,27 +74,32 @@ public class AttributeSliderController : MonoBehaviour
         }
     }
 
-    private void AppendAttributeBindingToList(ref List<BlendShapeInfo> blendShapeInfoList, string attributeToBind)
+    /// <summary>
+    /// Populate blendShapeInfoListForAttributes (via appending) with all of the blend shape bindings for ONE attribute.
+    /// </summary>
+    /// <param name="attributeToBind"></param>
+    private void AppendAttributeBindingToList(string attributeToBind)
     {
-        Debug.Log($"************{name} {attributeToBind}, {characterInfoController.GetBlendShapesForAttribute(attributeToBind).Count}");  //!!!!!!!!!!
-        blendShapeInfoList.AddRange(characterInfoController.GetBlendShapesForAttribute(attributeToBind));
-        //Debug.Log($"{name} {attributeToBind}, blendShapeInfoList.Count = {blendShapeInfoList.Count}"); //!!!!!!!!!!!!
+        blendShapeInfoListForAttributes.AddRange(characterInfoController.GetBlendShapesForAttribute(attributeToBind));
     }
 
-    private void BindAttributesToList(ref List<BlendShapeInfo> blendShapeInfoList)  //!!!
+    /// <summary>
+    /// Populate blendShapeInfoListForAttributes with all of the blend shape bings bindings for ALL attributes bound to this slider.
+    /// </summary>
+    private void BindAttributesToList()  //!!!
     {
-        //Debug.Log($"BindAttributesToList {name}, blendShapeInfoList.Count = {blendShapeInfoList.Count}, attributeSliderBindings.Length = {attributeSliderBindings.Length}"); //!!!!!!!!!!!!
-        blendShapeInfoList = new();
+        blendShapeInfoListForAttributes = new();
         foreach (AttributeSliderBinding attributeSliderBinding in attributeSliderBindings)
         {
-            AppendAttributeBindingToList(ref blendShapeInfoList, attributeSliderBinding.attribute);
+            AppendAttributeBindingToList(attributeSliderBinding.attribute);
         }
-        Debug.Log($"***BindAttributesToList {name}, blendShapeInfoList.Count = {blendShapeInfoList.Count}, attributeSliderBindings.Length = {attributeSliderBindings.Length}"); //!!!!!!!!!!!!
     }
 
+    /// <summary>
+    /// Handle a change in slider value by adjusting all blend shapes bound to this slider.
+    /// </summary>
     public void OnSliderValueChanged()
     {
-        Debug.Log($"OnSliderValueChanged blendShapeInfoListForAttributes {blendShapeInfoListForAttributes.Count}");    //!!!!!!!!!!!!!!!
         //Adjust all blend shapes with the attribute
         foreach (BlendShapeInfo blendShapeInfo in blendShapeInfoListForAttributes)
         {
