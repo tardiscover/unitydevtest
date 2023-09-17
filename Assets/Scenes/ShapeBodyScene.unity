@@ -2101,6 +2101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 10
+  verticalLayoutGroup: {fileID: 0}
 --- !u!1 &1463522513
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7282986283560805654}
   - component: {fileID: 7282986283560805655}
+  - component: {fileID: 3794573033800737042}
   m_Layer: 5
   m_Name: AttributeSlider
   m_TagString: Untagged
@@ -53,8 +54,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderTitle: 
   blendShapeInfoAttribute: 
-  characterInfoController: {fileID: 0}
+  defaultValue: 0
   blendShapeSources: []
+--- !u!114 &3794573033800737042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282986283560805657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d84f89d7c89dae479cc5ba07c0a6a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7282986284004166258
 GameObject:
   m_ObjectHideFlags: 0

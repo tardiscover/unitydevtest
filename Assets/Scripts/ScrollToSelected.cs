@@ -13,6 +13,7 @@ public class ScrollToSelected : MonoBehaviour
 {
 
     public float scrollSpeed = 10f;
+    public VerticalLayoutGroup verticalLayoutGroup;
 
     ScrollRect m_ScrollRect;
     RectTransform m_RectTransform;
@@ -20,6 +21,7 @@ public class ScrollToSelected : MonoBehaviour
     RectTransform m_SelectedRectTransform;
 
     private GameObject selected;    //!!!
+    private GameObject previouslySelected;    //!!!
 
     void Awake()
     {
@@ -30,12 +32,15 @@ public class ScrollToSelected : MonoBehaviour
 
     void Update()
     {
-        //!!!UpdateScrollToSelected();
-        //Debug.Log(GUI.GetNameOfFocusedControl());   //!!!!!!!!
-        selected = EventSystem.current.currentSelectedGameObject;   //!!!!!!!!!!!
+        selected = EventSystem.current.currentSelectedGameObject;   //!!! Newer way?
+        //if (selected != null && selected != previouslySelected)   //Can't do this because of Lerp
         if (selected != null)
         {
-            //Debug.Log(selected.transform.parent.gameObject.name);  //!!!!!!!!!!!!!
+            if (selected != previouslySelected)
+            {
+                previouslySelected = selected;
+                Debug.Log(selected.transform.parent.gameObject.name);  //!!!!!!!!!!!!!
+            }
             UpdateScrollToSelected(selected.transform.parent.gameObject);    //!!!
         }
     }
@@ -74,6 +79,7 @@ public class ScrollToSelected : MonoBehaviour
             float newY = currentScrollRectPosition + step;
             float newNormalizedY = newY / contentHeightDifference;
             m_ScrollRect.normalizedPosition = Vector2.Lerp(m_ScrollRect.normalizedPosition, new Vector2(0, newNormalizedY), scrollSpeed * Time.deltaTime);
+            //Debug.Log($"padding.top = {verticalLayoutGroup.padding.top}");    //!!!
         }
         else if (selectedPosition < below)
         {
@@ -81,6 +87,7 @@ public class ScrollToSelected : MonoBehaviour
             float newY = currentScrollRectPosition + step;
             float newNormalizedY = newY / contentHeightDifference;
             m_ScrollRect.normalizedPosition = Vector2.Lerp(m_ScrollRect.normalizedPosition, new Vector2(0, newNormalizedY), scrollSpeed * Time.deltaTime);
+            //Debug.Log($"padding.top = {verticalLayoutGroup.padding.bottom}");    //!!!
         }
     }
 }
