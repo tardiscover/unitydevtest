@@ -99,7 +99,6 @@ public class AttributeSliderController : MonoBehaviour
         foreach (AttributeSliderBinding attributeSliderBinding in attributeSliderBindings)
         {
             AppendAttributeBindingToList(attributeSliderBinding.attribute);
-            Debug.Log($"BindAttributesToList {attributeSliderBinding.attribute}");  //!!!!!!!!
             attributeSliderBindingSortedDictionary.Add(attributeSliderBinding.attribute, attributeSliderBinding);
         }
     }
