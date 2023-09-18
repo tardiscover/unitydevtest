@@ -4,9 +4,13 @@ using UnityEngine.EventSystems;
 using UnityEditor;
 
 /// <summary>
+/// Adapted from 
 /// https://gist.github.com/marcelschmidt1337/14a1528f98307d3d826f522196e9817f
+/// so that when you navigate to controls outside the viewport of the scrollview, 
+/// the selected control will scroll into view.
 /// 
-/// Currently not used because currentSelectedGameObject not working for  need to find when 
+/// Was working, but broke when I added intermediate ancestors with the collapsing Category panels.
+/// Next on my list of things to address (unless given something else as a priority).
 /// </summary>
 [RequireComponent(typeof(ScrollRect))]
 public class ScrollToSelected : MonoBehaviour
@@ -50,20 +54,24 @@ public class ScrollToSelected : MonoBehaviour
 
         // grab the current selected from the eventsystem
         //!!!GameObject selected = EventSystem.current.currentSelectedGameObject;
-        //Debug.Log(selected.name);   //!!!!!!!!!!!
 
         if (selected == null)
         {
             return;
         }
-        if (selected.transform.parent != m_ContentRectTransform.transform)
+        if (selected.transform.parent != m_ContentRectTransform.transform)  //!!!!!!! This needs changing now that there is nested content  from collapsing Category Panels.
         {
             return;
         }
+        Debug.Log($"UpdateScrollToSelected, {selected.name}");   //!!!!!!!!!!!
 
         m_SelectedRectTransform = selected.GetComponent<RectTransform>();
 
         // math stuff
+        //!!!Vector3 selectedDifference = m_RectTransform.localPosition - m_SelectedRectTransform.localPosition;
+        Debug.Log($"m_RectTransform.localPosition = {m_RectTransform.localPosition}"); //!!!!!!!!!!!!!!!!!!!
+        Debug.Log($"m_SelectedRectTransform.localPosition = {m_SelectedRectTransform.localPosition}"); //!!!!!!!!!!!!!!!!!!!
+        Debug.Log($"transform.InverseTransformPoint(m_SelectedRectTransform.position) = {transform.InverseTransformPoint(m_SelectedRectTransform.position)}"); //!!!!!!!!!!!!!!!!!!!
         Vector3 selectedDifference = m_RectTransform.localPosition - m_SelectedRectTransform.localPosition;
         float contentHeightDifference = (m_ContentRectTransform.rect.height - m_RectTransform.rect.height);
 
